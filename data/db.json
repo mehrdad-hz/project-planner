@@ -11,12 +11,6 @@
       "title": "Make marketing email",
       "details": "Lorem ipsum",
       "complete": false
-    },
-    {
-      "title": "be a master in Vue.js",
-      "details": "Learn new things and dive into vue.js",
-      "complete": false,
-      "id": 3
     }
   ]
 }
