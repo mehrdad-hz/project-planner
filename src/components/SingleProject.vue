@@ -90,13 +90,5 @@ h3 {
     max-width: 215px;
     word-break: break-word;
   }
-  nav.filter-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .filter-nav button {
-    margin-right: 0;
-  }
 }
 </style>
