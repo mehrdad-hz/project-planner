@@ -35,14 +35,25 @@ export default {
   border: none;
   color: #bbb;
   outline: none;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 25px;
   letter-spacing: 1px;
   font-weight: bold;
   cursor: pointer;
 }
 .filter-nav button.active {
   color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  nav.filter-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .filter-nav button {
+    margin-right: 0;
+  }
 }
 </style>

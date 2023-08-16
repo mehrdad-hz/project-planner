@@ -19,10 +19,12 @@ export default {};
   text-decoration: none;
   margin: 0 10px;
   color: #999;
+  font-weight: 500;
   font-size: 18px;
 }
 a.router-link-active {
-  border-bottom: 2px solid #00ce89;
-  padding-bottom: 4px;
+  border-bottom: 2px solid #64ffda;
+  padding-bottom: 10px;
+  color: #eee;
 }
 </style>

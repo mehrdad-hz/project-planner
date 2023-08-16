@@ -16,6 +16,7 @@
 <script>
 import SingleProject from "../components/SingleProject.vue";
 import FilterNav from "@/components/FilterNav.vue";
+import { useRouter } from "vue-router";
 export default {
   name: "HomeView",
   data() {
@@ -23,6 +24,10 @@ export default {
       projects: [],
       current: "all",
     };
+  },
+  setup() {
+    const router = useRouter();
+    console.log(router);
   },
   components: {
     SingleProject,

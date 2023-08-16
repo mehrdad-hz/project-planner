@@ -49,8 +49,8 @@ export default {
 <style scoped>
 .project {
   margin: 20px auto;
-  background: white;
-  padding: 10px 20px;
+  background: #112240;
+  padding: 25px;
   border-radius: 4px;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
   border-left: 4px solid #e90074;
@@ -79,5 +79,24 @@ h3 {
 .project.complete .tick {
   color: #00ce89;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    padding: 25px 20px;
+  }
+  .project h3 {
+    font-size: 18px;
+    max-width: 215px;
+    word-break: break-word;
+  }
+  nav.filter-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .filter-nav button {
+    margin-right: 0;
+  }
 }
 </style>

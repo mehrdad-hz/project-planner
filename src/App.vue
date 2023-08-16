@@ -1,6 +1,8 @@
 <template>
-  <Navbar />
-  <router-view />
+  <div class="container">
+    <Navbar />
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -13,15 +15,27 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-body {
-  background: #f2f2f2;
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 300ms;
+  box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  max-width: 600px;
-  margin: 0 auto;
-  color: #555;
+body {
+  background: #0a192f;
+  color: #eee;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+  }
 }
 </style>
